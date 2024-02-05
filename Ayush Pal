@@ -1,0 +1,153 @@
+\documentclass[12pt, addpoints]{exam}
+\usepackage{enumitem}
+
+% Define the format for the choices
+\renewcommand\choicelabel{\alph{choice})}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{SME Physics Assignment}
+\author{Ayush Pal}
+\date{February 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Work done in stretching a wire: Elastic Potential energy ($U$) of a stretched or strained wire}
+
+When a body is in its natural shape, its potential energy corresponding to the molecular forces is minimum. The potential energy in this state can be taken to be zero. When a wire is put under a tensile stress, internal restoring forces appear, and work is done against these inter-atomic forces, which is stored in the wire in the form of ‘elastic potential energy ($U$)’. Thus, the potential energy of the body increases.
+
+Consider a wire of natural length $l_0$ and cross-sectional area $A$, is fixed at one end and stretched by an external deforming force $F$ applied at the other end, along the length of the wire. The force is so adjusted that the wire is only slowly stretched. This ensures that at any time during the extension, the external force equals the tension in the wire.
+
+When the extension is $x$, the wire is under a longitudinal stress $\frac{F}{A}$, where $F$ is the tension at this time. The strain is $\frac{x}{l_0}$. The restoring elastic force or tension is $F = \text{stress} \times \text{area} = (Y \times \text{strain}) \times A = YA\frac{x}{l_0}$.
+
+Let the work $dW$ be done by the external force against the elastic restoring forces in stretching the wire through an infinitesimal or elementary extension $dx$.
+
+\[
+dW = F_R \, dx = YA\left(\frac{x}{l_0}\right) \, dx = \frac{YA}{l_0} x \, dx = Kx \, dx
+\]
+
+The total work done by the external force in stretching the wire from $l_0$ to $l_0 + \Delta l$ i.e., from $x = 0$ to $x = \Delta l$ is:
+
+\[
+W_{F_R} = \int_{0}^{\Delta l} dW = \int_{0}^{\Delta l} Kx \, dx = K \int_{0}^{\Delta l} x \, dx = \frac{K}{2} (\Delta l)^2 = \frac{YA}{2l_0} (\Delta l)^2
+\]
+
+Aliter: Strain energy stored in an equivalent spring is given by:
+\[
+U = \frac{1}{2} K(\Delta L)^2
+\] 
+where \(\Delta L = \frac{Fl_0}{AY}\) and \(K = \frac{YA}{l_0}\).
+
+Therefore,
+\[ 
+U = \frac{1}{2}\left(\frac{YA}{l_0}\right)\left(\frac{Fl_0}{AY}\right)^2 = \frac{1}{2}\left(\frac{YA}{l_0}\right)\left(\frac{F^2 l_0^2}{Y^2 A^2}\right) = \frac{F^2 l_0}{2AY} = \frac{F^2}{2K}
+\]
+
+Thus, the elastic potential energy stored in a stretched wire or rod is given by:
+\[
+W_{F_R} = U = 
+\left\{
+\begin{matrix}
+\frac{1}{2}\left[Y\left(\frac{\Delta l}{l_0}\right)\left(\frac{\Delta l}{l_0}\right)(A l_0)\right] = \frac{1}{2}\left(\text{Stress}\right)\left(\text{Strain}\right)\left(\text{Volume}\right) \\
+\frac{1}{2}Y\left(\frac{\Delta l}{l_0}\right)^2(A l_0) = \frac{1}{2}Y\left(\text{Strain}\right)^2(\text{Volume}) \\
+\frac{1}{2Y}\left(\frac{F}{A}\right)^2(A l_0) = \frac{1}{2}\left(\frac{\text{Stress}^2}{Y}\right)(\text{Volume})
+\end{matrix}
+\right.
+\]
+
+\[
+W_{F_R} = U = 
+\left\{
+\begin{matrix}
+\frac{F^2}{2K} = \frac{F^2 l_0}{2AY} = \frac{1}{2}\left(\frac{F}{A}\right)\left(\frac{F}{AY}\right)(A l_0) = \frac{1}{2}\left(\text{Stress}\right)\left(\text{Strain}\right)\left(\text{Volume}\right) \\
+= \frac{1}{2}Y\left(\frac{F}{AY}\right)^2(A l_0) = \frac{1}{2}Y\left(\text{Strain}\right)^2(\text{Volume})\\
+= \frac{1}{2}Y\left(\frac{F}{A}\right)^2(A l_0) = \frac{1}{2}\left(\frac{\text{Stress}^2}{Y}\right)(\text{Volume})
+\end{matrix}
+\right.
+\]
+
+
+Also,
+\begin{align*}
+W_{F_R} &= U = \frac{YA}{2l_0}(\Delta l)^2= \frac{1}{2}\left(\frac{YA}{l_0} \cdot \Delta l\right) \Delta l \\
+&= \frac{1}{2}(K \Delta l) \Delta l= \frac{1}{2}F \Delta l \\
+&= \frac{1}{2}(\text{Maximum/Average stretching force})(\text{Extension})
+\end{align*}
+
+Thus, \(W_{F_R} = \frac{1}{2}F\Delta l\), but \(W_{F_{\text{ext}}} = F\Delta l\).
+\[
+\therefore U_{\text{elastic}} = W_{F_R} = \frac{1}{2}W_{F_{\text{ext}}}
+\]
+
+Half or 50\% of work done by the external force (\(W_{F_{\text{ext}}}\)) is lost as heat or dissipative energy (irrecoverable), and the remaining half is stored in the form of elastic potential energy of the stretched wire.
+In contrast, 100\% of the work done by internal restoring forces (\(W_{F_R}\)) is recoverable and stored in the form of elastic potential energy of the stretched wire.
+
+\clearpage % or \newpage
+
+\section*{Single option correct MCQs}
+
+\begin{questions}
+
+\question
+A train of mass $m$ moves with a velocity $v$ on the equator from East to West. If $\omega$ is the angular speed of Earth about its axis and $R$ is the radius of the Earth, then the normal reaction acting on the train is
+\begin{choices}
+    \choice $mg[1-\frac{(\omega R-2v)\omega}{g}-\frac{v^2}{Rg}]$
+    \choice $mg[1-2\frac{(\omega R-v)\omega}{g}-\frac{v^2}{Rg}]$
+    \choice $mg[1-\frac{(\omega R+2v)\omega}{g}-\frac{v^2}{Rg}]$
+    \choice $mg[1-2\frac{(\omega R+v)\omega}{g}-\frac{v^2}{Rg}]$
+\end{choices}
+Answer: $(a)$
+
+\question
+A star initially has $10^{40}$ deuterons. It produces energy via the processes $\chemfig{^{2}_1\text{H}} + \chemfig{^{2}_1\text{H}} \rightarrow \chemfig{^{3}_1\text{H}} + \chemfig{^{1}_1\text{p}}^{1+}$ and $\chemfig{^{2}_1\text{H}} + \chemfig{^{3}_1\text{H}} \rightarrow \chemfig{^{4}_2\text{He}} + \chemfig{^{1}_0\text{n}}^{0},$ where the masses of the nuclei are $m(\chemfig{^{2}_1\text{H}}) = 2.014$ amu, $m(\chemfig{^{1}_1\text{p}}^{1+}) = 1.007$ amu, $m(\chemfig{^{1}_0\text{n}}^{0}) = 1.008$ amu and $m(\chemfig{^{4}_2\text{He}}) = 4.001$ amu. If the average power radiated by the star is $10^{16}$ W, the deuteron supply of the star is exhausted in a time of the order of  
+\begin{choices}
+    \choice $10^6 s$ 
+    \choice $10^8 s$ 
+    \choice $10^{12} s$ 
+    \choice $10^{16} s$ 
+\end{choices}
+Answer: $(c)$
+
+\question
+An ideal gas of molecular mass $M$ is located in the uniform gravitational field in which the free-fall acceleration is equal to $g$. Find the gas pressure as a function of height $h$, if $\rho=\rho_0$ at $h=0$ and the temperature varies with height as $T=T_0(1-ah)$, where $a$ is a positive constant. 
+\begin{choices}
+    \choice $p_0(1-ah)^{\frac{Mg}{aRT_0}}$
+    \choice $p_0e^{\frac{Mg(1-ah)}{aRT_0}}$
+    \choice $ap_0(1-ah)^{\frac{Mg}{RT_0}}$
+    \choice $p_0(1-ah)^{\frac{aRT_0}{Mg}}$
+\end{choices}
+Answer: $(a)$
+
+\end{questions}
+
+\section*{Multiple option correct MSQs}
+
+\begin{questions}
+
+\question
+Two bodies, each of mass $M$, are kept fixed with a separation $2L$. A particle of mass $m$ is projected from the mid-point of the line joining their centres, perpendicular to the line. The gravitational constant is $G$. The correct statement(s) is/are:
+\begin{choices}
+    \choice The minimum initial velocity of the mass $m$ to escape the gravitational field of the two bodies is $4\sqrt{\frac{GM}{L}}$
+    \choice The minimum initial velocity of the mass $m$ to escape the gravitational field of the two bodies is $2\sqrt{\frac{GM}{L}}$
+    \choice The minimum initial velocity of the mass $m$ to escape the gravitational field of the two bodies is $\sqrt{\frac{2GM}{L}}$
+    \choice The energy of the mass $m$ remains constant
+\end{choices}
+Answer: $(b,d)$
+
+\question
+A non-uniform ball of radius $R$ and radius of gyration about geometric centre = $\frac{R}{2}$, is kept on a frictionless surface.The geometric centre coincides with the centre of mass. The ball is struck horizontally with a sharp impulse $J$. The point of application of the impulse is at a height $h$ above the surface. Then 
+\begin{choices}
+    \choice The ball will roll purely if $h=\frac{5R}{4}$
+    \choice The ball will slip on the surface for all cases
+    \choice There will be no rotation if $h=R$
+    \choice The ball will roll purely if $h=\frac{3R}{2}$
+    
+\end{choices}
+Answer: $(a,c)$
+
+\end{questions}
+
+\end{document}
